@@ -1,12 +1,13 @@
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      hi
-    </div>
-  );
+const App = () => {
+
+  return(
+    <>
+    leon coffee house :)
+    </>
+  )
 }
 
 export default App;
