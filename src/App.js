@@ -1,10 +1,12 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import '../components/NavBar';
+import NavBar from './components/NavBar';
 
 const App = () => {
   return (
     <>
       <NavBar />
+      <Routes>{/* <Route path="/" exact element={}/> */}</Routes>
     </>
   );
 };
