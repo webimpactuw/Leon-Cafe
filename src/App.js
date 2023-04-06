@@ -1,13 +1,12 @@
-
 import './App.css';
+import '../components/NavBar';
 
 const App = () => {
-
-  return(
+  return (
     <>
-    leon coffee house :)
+      <NavBar />
     </>
-  )
-}
+  );
+};
 
 export default App;
