@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 184px;
+  gap: 8px;
+
+  position: absolute;
+  width: 1512px;
+  height: 128px;
+  left: 0px;
+  top: 0px;
+
+  background: #f5e2e2;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+}
