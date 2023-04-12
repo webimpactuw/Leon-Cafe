@@ -42,3 +42,12 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* Base styles */
+:root {
+  --color-primary: #f5e2e2;
+  --color-secondary: #ffffff;
+  --color-accent: #5f4a39;
+  --color-text-light: #5a534b;
+  --color-text-dark: #000000;
+}
