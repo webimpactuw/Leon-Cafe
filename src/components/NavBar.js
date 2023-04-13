@@ -8,8 +8,6 @@ const NavBar = () => {
         <img
           src='/img/logo.svg'
           alt='Leon Coffee House Seattle home'
-          width='96'
-          height='96'
         />
         <ul className='nav-links'>
           <li>
