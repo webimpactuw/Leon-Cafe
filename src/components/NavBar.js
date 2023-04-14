@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className='nav-container'>
         <img
           src='/img/logo.svg'
-          alt='Leon Coffee House Seattle home'
+          alt='Leon Coffee House Seattle Home'
         />
         <ul className='nav-links'>
           <li>

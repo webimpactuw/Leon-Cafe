@@ -1,0 +1,34 @@
+footer {
+  width: 100%;
+}
+
+.footer-container {
+  background-color: var(--color-primary);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  height: 128px;
+  padding: 12px 238.25px 12px 241.29px;
+}
+
+.logotext-container {
+  display: flex;
+  align-items: center;
+}
+
+.logotext-container > img {
+  height: 75px;
+  margin-right: 26.23px;
+}
+
+.social-icons {
+  margin-top: 33.34px;
+  margin-bottom: 21.67px;
+}
+
+footer .social-icons img {
+  display: flex;
+  width: 33px;
+  flex-shrink: 0;
+  aspect-ratio: 1;
+}
