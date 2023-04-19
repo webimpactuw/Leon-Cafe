@@ -1,0 +1,67 @@
+.home__landing {
+  background-image: url("../../public/img/resutaurantFront.jpg"); 
+  height: 640px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.home__welcome-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 184px;
+  gap: 8px;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 10px; 
+  
+}
+
+.home__about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10%;
+  max-width: 80%;
+  margin-inline: auto;
+  border: solid #5F4A39 0.89px;
+  border-radius: 4.45px;
+  height: 509.45px;
+  
+}
+
+.home__menu {
+    /* max-width: 445px; */
+    background-color: #F5E2E2;
+    width: 100%;
+}
+
+.home__location {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home__location div {
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--color-text-dark);
+}
+
+h2 {
+  color: var(--color-accent);
+}
+
+p {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+}

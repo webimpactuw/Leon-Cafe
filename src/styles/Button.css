@@ -1,0 +1,7 @@
+button {
+  font-family: 'Nunito';
+  background-color: transparent;
+  color: var(--color-text-light);
+  border: 1px solid var(--color-text-light);
+  border-radius: 2px;
+}
