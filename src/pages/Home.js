@@ -8,20 +8,28 @@ const Home = () => {
         <main>
         <section className="home__landing" >
           <div className='home__welcome-banner'>
-            <h1> Welcome To Leon Coffee House</h1>
-            <p> Family owned Mexican coffee house</p>
+            <div className='home__welcome-text'>
+              <h1> Welcome To Leon Coffee House</h1>
+              <p> Family owned Mexican coffee house</p>
+            </div>
           </div>
         </section>
 
 
-          <section className="home__about">
-            <div className="home__about_text">
-              <h2>About</h2>
-              <p><b>Leon Coffee House is a cozy and welcoming cafe in the heart of Seattle. </b>
-                We serve freshly brewed coffee, savory waffles, and delicious light bites in
-                a relaxed and friendly atmosphere. Our mission is to provide a comfortable
-                space for our community to gather, connect, and enjoy good food and drinks.
-              </p>
+          <section className="home__about-box">
+            <div className='home__about-border'>
+              <div className="home__about-row">
+                <div className='home__about-column'>
+                  <h2>About</h2>
+                </div>
+                <div className='home__about-column'>
+                  <p><b>Leon Coffee House is a cozy and welcoming cafe in the heart of Seattle. </b>
+                    We serve freshly brewed coffee, savory waffles, and delicious light bites in
+                    a relaxed and friendly atmosphere. Our mission is to provide a comfortable
+                    space for our community to gather, connect, and enjoy good food and drinks.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 

@@ -1,24 +1,44 @@
 .home__landing {
   background-image: url("../../public/img/resutaurantFront.jpg"); 
-  height: 640px;
+  opacity: 0.75;
+  height: 464px;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__welcome-banner {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 184px;
-  gap: 8px;
   background-color: rgb(255, 255, 255, 0.7);
-  border-radius: 10px; 
-  
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  width: 908px;
+  height: 156px;
+  border-radius: 7.5px;
 }
 
-.home__about {
+.home__welcome-text {
+  text-align: center;
+}
+
+.home__welcome-text h1 {
+  font-size: 37.5px;
+  font-weight: bold;
+  line-height: 52px;
+}
+
+.home__welcome-text p {
+  font-family: "Nunito", sans-serif;
+  font-size: 26.25px;
+  line-height: 36px;
+  opacity: 0.9;
+}
+
+/* .home__about {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -29,6 +49,41 @@
   border-radius: 4.45px;
   height: 509.45px;
   
+} */
+.home__about-box {
+  height: 384px;
+  width: 1134px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__about-border {
+  border: 0.75px solid var(--color-accent);
+  border-radius: 3.75px;
+  width: 960px;
+  height: 168px;
+}
+
+.home__about-row {
+  display: flex;
+  align-items: center;
+}
+
+.home__about-column h2 {
+  font-size: 37.5px;
+  color: var(--color-accent);
+  line-height: 52.5px;
+  margin-left: 87px;
+  margin-right: 87px;
+
+}
+
+.home__about-column p {
+  font-size: 18.75px;
+  line-height: 25.58px;
+  margin-right: 44.25px;
 }
 
 .home__menu {
