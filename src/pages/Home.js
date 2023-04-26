@@ -15,7 +15,6 @@ const Home = () => {
           </div>
         </section>
 
-
           <section className="home__about-box">
             <div className='home__about-border'>
               <div className="home__about-row">
@@ -33,16 +32,39 @@ const Home = () => {
             </div>
           </section>
 
+          <section className='home__image-banner'>
+          </section>
+
           <section className="home__menu">
-            <h2>Menu</h2>
-            <p> Indulge in our scrumptious cafe menu that offers a wide variety of drinks,
-                from creamy lattes to decadent affogatos, and food options that range from savory
-                sandwiches to mouth-watering waffles.
-            </p>
-            <button>View Menu</button>
+            <div className="home__menu-row">
+              <img src="/img/teddyCoffeeHome.jpg" alt="Teddy Bear Coffee"/>
+              <div className='home__menu-column'>
+                <h2>Menu</h2>
+                <p> Indulge in our scrumptious cafe menu that offers a wide variety of drinks,
+                    from creamy lattes to decadent affogatos, and food options that range from savory
+                    sandwiches to mouth-watering waffles.
+                </p>
+                <button>View Menu</button>
+              </div>
+            </div>
+          </section>
+
+          <section className="home__photos">
+            <div class="row">
+              <div className="column">
+                <img src="/img/wafflesHome.jpg" alt="Matcha Waffles" />
+              </div>
+              <div className="column">
+                <img src="/img/wafflesHome.jpg" alt="Matcha Waffles" />
+              </div>
+              <div className="column">
+                <img src="/img/coffeeHome.jpg" alt="Latte Art" />
+              </div>
+            </div>
           </section>
 
           <section className="home__gallery">
+            <h2>Gallery</h2>
             <button>View Gallery</button>
           </section>
 

@@ -5,8 +5,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import DrinksMenu from './pages/drinksMenu';
 import Gallery from './pages/Gallery';
-import Footer from './components/Footer';
 import SandwichesMenu from './pages/sandwichesMenu';
+import WafflesMenu from './pages/wafflesMenu';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/drinksmenu' element={<DrinksMenu />} />
         <Route path='/sandwichesmenu' element={<SandwichesMenu/>} />
+        <Route path='/wafflesmenu' element={<WafflesMenu/>} />
         <Route path='/gallery' element={<Gallery />} />
       </Routes>
       <Footer/>
