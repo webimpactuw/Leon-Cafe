@@ -1,12 +1,10 @@
-const Menu = () => {
+const SandwichesMenu = () => {
 
     return(
       <>
         <main>
           <section className="menu__headers">
             <p> Drinks </p>
-            <p> Sandwiches </p>
-            <p> Waffles </p>
           </section>
 
 
@@ -24,4 +22,4 @@ const Menu = () => {
     )
 }
   
-export default Menu;
+export default SandwichesMenu;
