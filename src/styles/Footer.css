@@ -8,7 +8,7 @@ footer {
   display: flex;
   justify-content: space-between;
   height: 128px;
-  padding: 12px 238.25px 12px 241.29px;
+  padding: 16px 12%;
 }
 
 .logotext-container {
@@ -21,14 +21,14 @@ footer {
   margin-right: 26.23px;
 }
 
-.social-icons {
-  margin-top: 33.34px;
-  margin-bottom: 21.67px;
+footer .social-icons {
+  display: flex;
+  gap: 18px;
+  flex-shrink: 0;
+  align-items: center;
 }
 
 footer .social-icons img {
-  display: flex;
-  width: 33px;
-  flex-shrink: 0;
+  width: 24px;
   aspect-ratio: 1;
 }

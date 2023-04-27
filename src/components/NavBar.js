@@ -5,10 +5,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className='nav-container'>
-        <img
-          src='/img/logo.svg'
-          alt='Leon Coffee House Seattle Home'
-        />
+        <img src='/img/logo.svg' alt='Leon Coffee House Seattle Home' />
         <ul className='nav-links'>
           <li>
             <NavLink to='/' className='link'>
