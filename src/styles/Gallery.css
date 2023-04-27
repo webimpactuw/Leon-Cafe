@@ -1,0 +1,39 @@
+.gallery {
+  padding: 24px 10% 64px;
+}
+
+.gallery h1 {
+  text-align: center;
+  color: var(--color-accent);
+  font-weight: 700;
+  padding-block: 20px;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.gallery__grid img {
+  object-fit: cover;
+}
+
+.gallery__grid img:first-child {
+  aspect-ratio: 5 / 4;
+  object-position: 0% 10%;
+}
+
+.gallery__socials {
+  background-color: var(--color-primary);
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.gallery__socials > div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}

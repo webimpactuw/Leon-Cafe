@@ -49,6 +49,7 @@
   border-radius: 4.45px;
   height: 509.45px;
 } */
+
 .home__about-box {
   height: 384px;
   width: 1134px;
@@ -62,7 +63,7 @@
   border: 0.75px solid var(--color-accent);
   border-radius: 3.75px;
   width: 960px;
-  height: 168px;
+  /* height: 168px; */
 }
 
 .home__about-row {
@@ -81,13 +82,45 @@
 .home__about-column p {
   font-size: 18.75px;
   line-height: 25.58px;
-  margin-right: 44.25px;
+  /* margin-right: 44.25px; */
+  margin: 40px;
+}
+
+.home__image-banner {
+  background-image: url('../../public/img/shopHome.jpg');
 }
 
 .home__menu {
-  /* max-width: 445px; */
   background-color: #f5e2e2;
   width: 100%;
+  height: 512px;
+}
+
+.home__menu-row {
+  display: flex;
+  align-items: center;
+  padding-left: 230px;
+}
+
+.home__menu-column {
+  padding: 120px;
+}
+
+.home__menu h2 {
+  font-size: 30px;
+}
+
+.home__menu p {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 20px;
+}
+
+.home__menu button {
+  font-size: 20px;
+  border-radius: 5.6px;
+  height: 50px;
+  width: 135px;
 }
 
 .home__location {
@@ -97,6 +130,35 @@
 
 .home__location div {
   text-align: center;
+}
+
+.home__photos {
+  padding: 48px 241px;
+}
+.home__photos .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.home__photos .row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.home__photos img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home__gallery h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28.5px;
+  line-height: 31px;
+  color: #5f4a39;
 }
 
 h1,
