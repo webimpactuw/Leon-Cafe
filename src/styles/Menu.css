@@ -20,6 +20,10 @@ main {
   color: var(--color-accent);
 }
 
+/* .menu__headers a:active {
+  background-color: var(--color-primary);
+} */
+
 .menu__headers span {
   margin-right: 29.25px;
   margin-left: 29.25px;
@@ -27,11 +31,21 @@ main {
 
 .menu__download {
   display: flex;
+  flex-direction: row;
+  /* Need to find a better way to write this */
+  margin-inline-start: 932.75px;
+}
+
+.menu__download img {
+  width: 16.31px;
 }
 
 .menu__download p {
   font-size: 16.5px;
+  font-weight: bold;
+  margin-right: 14px;
 }
+
 
 .menu__image {
   display: flex;
