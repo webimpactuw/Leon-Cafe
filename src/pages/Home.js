@@ -52,13 +52,13 @@ const Home = () => {
           <section className="home__photos">
             <div className="row">
               <div className="column">
-                <img src="/img/wafflesHome.jpg" alt="Matcha Waffles" />
+                <img src="/img/sandwichesHome.jpg" alt="Matcha Waffles" />
               </div>
               <div className="column">
                 <img src="/img/wafflesHome.jpg" alt="Matcha Waffles" />
               </div>
               <div className="column">
-                <img src="/img/coffeeHome.jpg" alt="Latte Art" />
+                <img src="/img/coffeeHomeBrighter.jpg" alt="Latte Art" />
               </div>
             </div>
           </section>
