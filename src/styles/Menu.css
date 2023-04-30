@@ -20,32 +20,10 @@ main {
   color: var(--color-accent);
 }
 
-/* .menu__headers a:active {
-  background-color: var(--color-primary);
-} */
-
 .menu__headers span {
   margin-right: 29.25px;
   margin-left: 29.25px;
 }
-
-.menu__download {
-  display: flex;
-  flex-direction: row;
-  /* Need to find a better way to write this */
-  margin-inline-start: 932.75px;
-}
-
-.menu__download img {
-  width: 16.31px;
-}
-
-.menu__download p {
-  font-size: 16.5px;
-  font-weight: bold;
-  margin-right: 14px;
-}
-
 
 .menu__image {
   display: flex;
@@ -57,4 +35,25 @@ main {
   margin-bottom: 47px;
   width: 655.5px;
   height: 927.75px;
+}
+
+.menu__download {
+  max-width: 655.5px;
+  display: flex;
+  flex-direction: row;
+  margin: 36.5px auto 9px auto;
+  margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-end;
+}
+
+.menu__download p {
+  font-size: 16.5px;
+  font-weight: bold;
+  margin-right: 14px;
+}
+
+.pink-bg {
+  background-color: #FCE5F7;
 }
