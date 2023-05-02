@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import menu from "../Menu.pdf";
 import '../styles/Menu.css';
 
 const SandwichesMenu = () => {
@@ -18,7 +19,6 @@ const SandwichesMenu = () => {
         <ul>
             <li>
               <Link to="/drinksmenu">
-                {/* This is how the pink highlight is appearing when menu is clicked */}
                 <span>
                   Drinks
                 </span>|
@@ -46,16 +46,16 @@ const SandwichesMenu = () => {
         </section>
 
         <section className="menu__download">
-          <p> Download PDF </p>
-          <img src="/img/downloadIcon.svg" />
+          <a href={menu} download="Menu">Download PDF</a>
+          <a href={menu} download="Menu"><img src="/img/downloadIcon.svg" /></a>
         </section>
 
         <section className="menu__image">
-          <img src="/img/sandwichesMenu.jpg"/>
+          <img src="/img/sandwichesMenu.png"/>
         </section>
       </main>
     </>
   )
 }
-  
+
 export default SandwichesMenu;

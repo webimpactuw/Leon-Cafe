@@ -35,6 +35,8 @@ main {
   margin-bottom: 47px;
   width: 655.5px;
   height: 927.75px;
+  border: 1px solid;
+  border-radius: 3.75px;
 }
 
 .menu__download {
@@ -48,10 +50,13 @@ main {
   justify-content: flex-end;
 }
 
-.menu__download p {
+.menu__download a {
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 16.5px;
   font-weight: bold;
   margin-right: 14px;
+  text-decoration: none;
+  color: var(--color-text-dark);
 }
 
 .pink-bg {
