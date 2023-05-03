@@ -86,14 +86,15 @@
   margin: 40px;
 }
 
-.home__image-banner {
-  background-image: url('../../public/img/shopHome.jpg');
+.home__image-banner img {
+  height: 480px;
+  margin-bottom: 0;
 }
 
 .home__menu {
   background-color: #f5e2e2;
   width: 100%;
-  height: 512px;
+  height: 480px;
 }
 
 .home__menu-row {
