@@ -1,7 +1,6 @@
 import '../styles/Home.css';
 import '../styles/Button.css';
 
-
 const Home = () => {
     return(
       <>
@@ -45,7 +44,9 @@ const Home = () => {
                     from creamy lattes to decadent affogatos, and food options that range from savory
                     sandwiches to mouth-watering waffles.
                 </p>
-                <button>View Menu</button>
+                <a href='/drinksMenu'>
+                  <button>View Menu</button>
+                </a>
               </div>
             </div>
           </section>
@@ -53,13 +54,22 @@ const Home = () => {
           <section className="home__photos">
             <div className="row">
               <div className="column">
+              <a href="/sandwichesmenu">
                 <img src="/img/homeSandwiches.png" alt="Matcha Waffles" />
+                <h2 className="photo_text">SANDWICHES</h2>
+              </a>
               </div>
               <div className="column">
+              <a href="/wafflesmenu">
                 <img src="/img/wafflesHome.jpg" alt="Matcha Waffles" />
+                <h2 className="photo_text">WAFFLES</h2>
+              </a>
               </div>
               <div className="column">
+              <a href="/drinksmenu">
                 <img src="/img/coffeeHomeBrighter.jpg" alt="Latte Art" />
+                <h2 className="photo_text">DRINKS</h2>
+              </a>
               </div>
             </div>
           </section>
@@ -67,7 +77,9 @@ const Home = () => {
           <section className="home__gallery">
             <h2>Gallery</h2>
             <img src="/img/rainbow-stairs.jpg" alt="Rainbow Staircase"/>
-            <button>View Gallery</button>
+            <a href='/gallery'>
+              <button>View Gallery</button>
+            </a>
           </section>
 
           <section className="home__location">

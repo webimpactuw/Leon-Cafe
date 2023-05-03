@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from 'react-router-dom';
-import { useState } from "react"; 
+import { useState } from "react";
 import '../styles/NavBar.css';
 import DrinksMenu from '../pages/drinksMenu';
 
@@ -27,7 +27,9 @@ const NavBar = () => {
   return (
     <nav>
       <div className='nav-container'>
-        <img src='/img/logo.svg' alt='Leon Coffee House Seattle Home' />
+        <NavLink to='/' className='link'>
+          <img src='/img/logo.svg' alt='Leon Coffee House Seattle Home' />
+        </NavLink>
         <ul className='nav-links'>
           <li>
             <NavLink to='/' className='link'>

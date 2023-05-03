@@ -1,3 +1,5 @@
+import Location from '../components/Location';
+import Socials from '../components/Socials';
 import '../styles/About.css';
 
 const About = () => {
@@ -23,20 +25,14 @@ const About = () => {
             </div>
           </section>
 
-          <section className="about__location-hours">
-            <h2>Location & Hours</h2>
-            <p> Monday - Friday<sup>*</sup></p>
-            <p> 7:30AM - 6:00PM</p>
-            <p> Saturday - Sunday<sup>*</sup></p>
-            <p> 8:30AM - 6:00PM</p>
-            <p> *Check Instagram for updated hours!</p>
-            <p>1309 NE 45th St, Seattle, WA</p>
-          </section>
+          <Location />
 
-          <section className="about_social-media">
-            <h2>Social Media</h2>
-            <p>Check us out on Instagram and Facebook for updated hours, new posts, and more photos!</p>
-
+          <section className="about__social-media">
+            <div>
+              <h2>Social Media</h2>
+              <p>Check us out on Instagram and Facebook for updated hours, new posts, and more photos!</p>
+            </div>
+            <Socials />
           </section>
         </main>
       </>

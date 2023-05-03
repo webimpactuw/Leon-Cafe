@@ -1,0 +1,23 @@
+.socials-container {
+  background-color: var(--color-primary);
+  display: flex;
+  height: 100%;
+}
+
+.socials-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: auto;
+  padding-block: 64px;
+}
+
+.socials-block > div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.socials-block img {
+  width: 64px;
+}

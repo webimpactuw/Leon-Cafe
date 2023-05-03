@@ -64,26 +64,3 @@
   width: 100%;
   height: 100%;
 }
-
-.gallery__container {
-  background-color: var(--color-primary);
-  display: flex;
-}
-
-.gallery__socials {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin: auto;
-  padding-block: 64px;
-}
-
-.gallery__socials > div {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.gallery__socials img {
-  width: 64px;
-}

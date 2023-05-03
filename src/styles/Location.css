@@ -1,0 +1,43 @@
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.location img {
+  width: 516px;
+  height: 288px;
+}
+
+.location__hours h2 {
+  font-weight: bold;
+  font-size: 28.5px;
+  margin-bottom: 28.25px;
+}
+
+.location__hours p {
+  text-align: center;
+  font-size: 18.75px;
+}
+
+.location__hours p:nth-child(5) {
+  margin-bottom: 8.25px;
+}
+
+.location__hours p:nth-child(6) {
+  margin-bottom: 37.5px;
+  font-size: 15px;
+}
+
+.location__address img {
+  width: 19.5px;
+  height: 19.5px;
+  margin-right: 6px;
+}
+
+.location__address {
+  display: flex;
+  align-items: center;
+}
+
