@@ -25,7 +25,9 @@ const About = () => {
             </div>
           </section>
 
-          <Location />
+          <section className="about__location">
+            <Location />
+          </section>
 
           <section className="about__social-media">
             <div>

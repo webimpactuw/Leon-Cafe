@@ -1,7 +1,6 @@
 .about__our-story {
-  height: 551px;
+  height: 450px;
   margin-top: 99.75px;
-  /* margin-bottom: 100.25px; */
   position: relative;
   overflow: hidden;
 }
@@ -30,6 +29,7 @@
   font-weight: bolder;
   font-size: 28.5px;
   margin-bottom: 28.25px;
+  text-shadow: 0.3px 0.3px var(--color-accent);
 }
 
 .about__our-story-text p span {
@@ -46,23 +46,10 @@
 .about__location {
   height: 473px;
   background-color: var(--color-primary);
+  /* display: flex;
+  align-items: center; */
 }
 
-.about__location .wrapper {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.about__location div {
-  text-align: center;
-  padding: 54px 40px;
-}
-
-.about__location iframe {
-  padding: 54px 0;
-  width: 516px;
-  height: 288px;
-}
 
 .about__social-media {
   padding-block: 80px;

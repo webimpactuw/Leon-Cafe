@@ -133,19 +133,8 @@ button:hover {
   color: #FFFFFF;
 }
 
-.home__location .wrapper {
+.location__address {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.home__location div {
-  text-align: center;
-  padding: 54px 40px;
-}
-.home__location iframe {
-  padding: 54px 0;
-  width: 516px;
-  height: 288px;
 }
 
 .home__photos {

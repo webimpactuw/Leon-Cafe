@@ -1,3 +1,4 @@
+import Location from '../components/Location';
 import '../styles/Home.css';
 import '../styles/Button.css';
 
@@ -83,25 +84,7 @@ const Home = () => {
           </section>
 
           <section className="home__location">
-            <div className="wrapper">
-            <div>
-              <h2>Location & Hours</h2>
-              <p> Monday - Friday<sup>*</sup></p>
-              <p> 7:30AM - 6:00PM</p>
-              <p> Saturday - Sunday<sup>*</sup></p>
-              <p> 8:30AM - 6:00PM</p>
-              <p> *Check Instagram for updated hours!</p>
-              <p>1309 NE 45th St, Seattle, WA</p>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.1924538016283!2d-122.31640462325386!3d47.661257571194994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490157702be5fd5%3A0x896d80d8e8ab75f8!2sLeon%20Coffee%20House!5e0!3m2!1sen!2sus!4v1681864838145!5m2!1sen!2sus"
-                    // width="400"
-                    // height="300"
-                    style={{ border: "0" }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
-            </div>
+            <Location />
           </section>
         </main>
       </>
