@@ -1,5 +1,5 @@
 .home__landing {
-  background-image: url("../../public/img/resutaurantFront.jpg");
+  background-image: url('../../public/img/resutaurantFront.jpg');
   opacity: 0.75;
   height: 464px;
   background-position: center;
@@ -32,7 +32,7 @@
 }
 
 .home__welcome-text p {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 26.25px;
   line-height: 36px;
   opacity: 0.9;
@@ -45,7 +45,7 @@
   gap: 10%;
   max-width: 80%;
   margin-inline: auto;
-  border: solid #5F4A39 0.89px;
+  border: solid #5f4a39 0.89px;
   border-radius: 4.45px;
   height: 509.45px;
 } */
@@ -86,15 +86,16 @@
   margin: 40px;
 }
 
-.home__image-banner {
-  background-image: url("../../public/img/shopHome.jpg");
+.home__image-banner img {
+  height: 480px;
+  margin-bottom: 0;
 }
 
 .home__menu {
-    background-color: #F5E2E2;
-    width: 100%;
-    height: 512px;
-  }
+  background-color: #f5e2e2;
+  width: 100%;
+  height: 480px;
+}
 
 .home__menu-row {
   display: flex;
@@ -138,7 +139,6 @@
   height: 288px; 
 }
 
-
 .home__photos {
   padding: 48px 241px;
 }
@@ -149,36 +149,23 @@
 }
 
 .home__photos .row::after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }
 .home__photos img {
-  width: 100%; 
-  aspect-ratio: 1; 
-  object-fit: cover; 
-  object-position: center;  
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
 }
 
-
-.home__gallery {
-  background-color: var(--color-primary);
-  text-align: center;
-}
 .home__gallery h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 28.5px;
   line-height: 31px;
-  color: #5F4A39;
-  padding: 40px 0; 
-}
-.home__gallery img {
-  width: 67%; 
-  aspect-ratio: 2.35/1; 
-  margin: auto; 
-  object-fit: cover; 
-  object-position: center;
+  color: #5f4a39;
 }
 .home__gallery button {
   margin: 40px 0;  
@@ -187,7 +174,8 @@
 }
 
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Julius Sans One';
   font-style: normal;
   font-weight: 400;

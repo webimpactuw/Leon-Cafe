@@ -1,36 +1,61 @@
-import { Link } from "react-router-dom";
-import { useState } from "react"; 
+import { Link, useLocation} from "react-router-dom";
+import { useState } from 'react';
+import menu from "../Menu.pdf";
 import '../styles/Menu.css';
 
 const DrinksMenu = () => {
-  const [background, setBackground] = useState('transparent');
-  const handleClick = () => {
-    setBackground(prevBackground => prevBackground === 'transparent' ? 'pink' : 'transparent');
-  }
+  const location = useLocation();
+  const [activeMenu, setActiveMenu] = useState("drinks");
 
-    return(
-      <>
-        <main className="menu__main">
-          <section className="menu__headers">
-            <ul>
-              <li onClick={handleClick} style={{backgroundColor: background}}><Link to="/drinksmenu"><span>Drinks</span>|</Link></li>
-              <li><Link to="/sandwichesmenu"><span>Sandwiches</span>|</Link></li>
-              <li><Link to="/wafflesmenu"><span>Waffles</span></Link></li>
-            </ul>
-          </section>
+  const handleClick = (menu) => {
+    setActiveMenu(menu);
+  };
 
-          <section className="menu__download">
-            <p> Download PDF </p>
-            <img src="/img/downloadIcon.svg" />
-          </section>
+  return(
+    <>
+      <main>
+        <section className="menu__headers">
+          <ul>
+            <li>
+              <Link to="/drinksmenu">
+                <span
+                  className={ activeMenu === "drinks" || location.pathname === '/drinksmenu' ? 'pink-bg' : ''}
+                  onClick={() => handleClick("drinks")}>
+                  Drinks
+                </span>|
+              </Link>
+            </li>
 
-          <section className="menu__image">
-            <img src="/img/drinksMenu1.jpg"/>
-            <img src="/img/drinksMenu2.jpg"/>
-          </section>
-        </main>
-      </>
-    )
+            <li>
+              <Link to="/sandwichesmenu">
+                <span>
+                  Sandwiches
+                </span>|
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/wafflesmenu">
+                <span>
+                  Waffles
+                </span>
+              </Link>
+            </li>
+          </ul>
+        </section>
+
+        <section className="menu__download">
+          <a href={menu} download="Menu">Download PDF</a>
+          <a href={menu} download="Menu"><img src="/img/downloadIcon.svg" /></a>
+        </section>
+
+        <section className="menu__image">
+          <img src="/img/drinksMenu1.png"/>
+          <img src="/img/drinksMenu2.png"/>
+        </section>
+      </main>
+    </>
+  )
 }
-  
+
 export default DrinksMenu;

@@ -1,7 +1,7 @@
 nav {
   width: 100%;
   background: var(--color-primary);
-  padding: 12px 238.25px 12px 241.29px;
+  padding: 16px 12%;
 }
 
 .nav-container {
@@ -9,7 +9,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 108.36px 94.25px;
+  gap: 12%;
 
   max-width: 1512px;
 
@@ -21,6 +21,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+  padding: 0;
 }
 
 .nav-links li {
@@ -44,13 +45,14 @@ nav {
   height: 72px;
 }
 
-.social-icons {
+nav .social-icons {
   display: flex;
   gap: 18px;
   flex-shrink: 0;
+  align-items: center;
 }
 
-.social-icons img {
+nav .social-icons img {
   width: 24px;
   aspect-ratio: 1;
 }
