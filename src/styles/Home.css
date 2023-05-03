@@ -159,13 +159,24 @@
   object-fit: cover;
   object-position: center;
 }
-
+.home__gallery {
+  background-color: var(--color-primary);
+  text-align: center;
+}
 .home__gallery h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 28.5px;
   line-height: 31px;
-  color: #5f4a39;
+  color: #5F4A39;
+  padding: 40px 0; 
+}
+.home__gallery img {
+  width: 67%; 
+  aspect-ratio: 2.35/1; 
+  margin: auto; 
+  object-fit: cover; 
+  object-position: center;
 }
 .home__gallery button {
   margin: 40px 0;  
