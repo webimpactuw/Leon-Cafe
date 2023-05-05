@@ -21,11 +21,11 @@
 .about__our-story-text p {
   margin-right: 267.16px;
   font-size: 18.75px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin-bottom: 10px;
 }
 
-.about__our-story-text h2 {
+.about h2 {
   font-weight: bolder;
   font-size: 28.5px;
   margin-bottom: 28.25px;
@@ -37,7 +37,6 @@
 }
 
 .about__our-story-text img {
-  /* position: absolute; */
   margin-left: 312.58px;
   width: 437.25px;
   height: 351px;
@@ -46,17 +45,14 @@
 .about__location {
   height: 473px;
   background-color: var(--color-primary);
-  /* display: flex;
-  align-items: center; */
 }
 
-
 .about__social-media {
-  padding-block: 80px;
+  padding: 80px 10%;
   display: flex;
   justify-content: space-around;
 }
 
-.about__social-media div {
+.about__social-media-text {
   max-width: 300px;
 }
