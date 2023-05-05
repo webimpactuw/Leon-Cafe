@@ -1,4 +1,4 @@
-import Socials from '../components/Socials'
+import Socials from '../components/Socials';
 import '../styles/Gallery.css';
 
 const Gallery = () => {
@@ -14,7 +14,7 @@ const Gallery = () => {
         <img className='item-6' src='/img/galleryStairs.png' alt='' />
 
         <div className='item-7'>
-          <Socials className='gallery__socials'/>
+          <Socials className='gallery__socials' />
         </div>
       </div>
     </section>

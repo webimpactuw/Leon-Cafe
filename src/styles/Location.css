@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   height: 473px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .location__hours h2 {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 28.5px;
   font-weight: bolder;
   margin-bottom: 28.25px;

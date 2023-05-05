@@ -6,6 +6,7 @@ const About = () => {
   return (
     <>
       <main className='about'>
+        <h1 className='visually-hidden'>About</h1>
         <section className='about__our-story'>
           <img src='/img/aboutLogo.png' alt='' />
           <div className='about__our-story-text'>
@@ -13,8 +14,8 @@ const About = () => {
             <div>
               <h2>Our Story</h2>
               <p>
-                Leon Coffee House was created to{' '}
-                <span>celebrate Latin heritage</span>. U district was the
+                Leon Coffee House was created to
+                <span> celebrate Latin heritage</span>. U district was the
                 perfect place to share this culture with others. The staff love
                 what they do.
               </p>

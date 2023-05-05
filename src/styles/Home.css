@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.home__landing h1 {
+  font-weight: 400;
+}
+
 .home__welcome-banner {
   display: flex;
   justify-content: center;
@@ -209,7 +213,7 @@
   padding: 0.8% 1.2%;
 }
 
-.home__ h1,
+h1,
 h2,
 .photo_text {
   font-family: 'Julius Sans One';

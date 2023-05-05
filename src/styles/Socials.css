@@ -2,6 +2,7 @@
   background-color: var(--color-primary);
   display: flex;
   height: 100%;
+  padding-inline: 80px;
 }
 
 .socials-block {
