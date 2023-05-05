@@ -159,12 +159,7 @@ button:hover {
   object-fit: cover;
   object-position: center;
 }
-.home__photos img:hover {
-  opacity: 0.5; 
-  transition: opacity linear 0.3s;
-  -webkit-filter: brightness(70%);  
-}
-.home__photos .photo_text {
+.home__photos .photo_link .photo_text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -174,9 +169,14 @@ button:hover {
   color: white; 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
-.home__photos img:hover + .photo_text {
-  opacity: 1; 
-  transition: opacity linear 0.3s; 
+.home__photos .photo_link:hover img {
+  opacity: 0.5; 
+  transition: opacity linear 0.3s;
+  -webkit-filter: brightness(70%);  
+}
+.home__photos .photo_link:hover .photo_text{
+  opacity: 1;  
+  transition: opacity linear 0.3s;
 }
 
 .home__gallery {
@@ -225,4 +225,34 @@ p {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 300;
+}
+
+#moveDown {
+  -webkit-animation: movingDown 3s;
+  animation: movingDown 3s;
+}
+#moveUp {
+  -webkit-animation: movingUp 3s;
+  animation: movingUp 3s;
+}
+
+@keyframes movingDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0.5; 
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0.5; 
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

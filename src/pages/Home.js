@@ -7,10 +7,10 @@ const Home = () => {
       <>
         <main>
         <section className="home__landing" >
-          <div className='home__welcome-banner'>
+          <div className='home__welcome-banner' id="moveUp">
             <div className='home__welcome-text'>
-              <h1> Welcome To Leon Coffee House</h1>
-              <p> Family owned Mexican coffee house</p>
+              <h1 id="moveDown"> Welcome To Leon Coffee House</h1>
+              <p id="moveUp"> Family owned Mexican coffee house</p>
             </div>
           </div>
         </section>
@@ -55,19 +55,19 @@ const Home = () => {
           <section className="home__photos">
             <div className="row">
               <div className="column">
-              <a href="/sandwichesmenu">
+              <a className="photo_link" href="/sandwichesmenu">
                 <img src="/img/homeSandwiches.png" alt="Matcha Waffles" />
                 <h2 className="photo_text">SANDWICHES</h2>
               </a>
               </div>
               <div className="column">
-              <a href="/wafflesmenu">
+              <a className="photo_link" href="/wafflesmenu">
                 <img src="/img/wafflesHome.jpg" alt="Matcha Waffles" />
                 <h2 className="photo_text">WAFFLES</h2>
               </a>
               </div>
               <div className="column">
-              <a href="/drinksmenu">
+              <a className="photo_link" href="/drinksmenu">
                 <img src="/img/coffeeHomeBrighter.jpg" alt="Latte Art" />
                 <h2 className="photo_text">DRINKS</h2>
               </a>
