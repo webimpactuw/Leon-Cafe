@@ -15,7 +15,7 @@ const About = () => {
               <h2>Our Story</h2>
               <p>
                 Leon Coffee House was created to
-                <span> celebrate Latin heritage</span>. U district was the
+                <span> celebrate Latin heritage</span>. U District was the
                 perfect place to share this culture with others. The staff love
                 what they do.
               </p>
