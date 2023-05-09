@@ -1,4 +1,5 @@
 import Location from '../components/Location';
+import HomeGallery from '../components/HomeGallery';
 import '../styles/Home.css';
 import '../styles/Button.css';
 
@@ -82,7 +83,7 @@ const Home = () => {
 
         <section className='home__gallery'>
           <h2>Gallery</h2>
-          <img src='/img/rainbow-stairs.jpg' alt='Rainbow Staircase' />
+          <HomeGallery />
           <a href='/gallery'>
             <button>View Gallery</button>
           </a>
