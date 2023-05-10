@@ -10,8 +10,8 @@ const Home = () => {
         <section className='home__landing'>
           <div className='home__welcome-banner'>
             <div className='home__welcome-text'>
-              <h1>Welcome To Leon Coffee House</h1>
-              <p>Family owned Mexican coffee house</p>
+              <h1 id="moveDown"> Welcome To Leon Coffee House</h1>
+              <p id="moveUp"> Family owned Mexican coffee house</p>
             </div>
           </div>
         </section>

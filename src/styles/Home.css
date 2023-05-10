@@ -239,3 +239,34 @@ p {
   font-style: normal;
   font-weight: 300;
 }
+
+
+#moveDown {
+  -webkit-animation: movingDown 3s;
+  animation: movingDown 3s;
+}
+#moveUp {
+  -webkit-animation: movingUp 3s;
+  animation: movingUp 3s;
+}
+
+@keyframes movingDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0.5; 
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes movingUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0.5; 
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
