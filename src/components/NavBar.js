@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import '../styles/NavBar.css';
-import DrinksMenu from '../pages/drinksMenu';
+import DrinksMenu from '../pages/DrinksMenu';
 
 const NavBar = () => {
   // const [isDrinksMenuClicked, setIsDrinksMenuClicked] = useState(false);
