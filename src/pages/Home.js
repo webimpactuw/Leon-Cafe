@@ -10,8 +10,8 @@ const Home = () => {
         <section className='home__landing'>
           <div className='home__welcome-banner'>
             <div className='home__welcome-text'>
-              <h1 id="moveDown"> Welcome To Leon Coffee House</h1>
-              <p id="moveUp"> Family owned Mexican coffee house</p>
+              <h1 id='moveDown'> Welcome To Leon Coffee House</h1>
+              <p id='moveUp'> Family owned Mexican coffee house</p>
             </div>
           </div>
         </section>
@@ -54,7 +54,7 @@ const Home = () => {
                 waffles.
               </p>
               <a href='/drinksMenu'>
-                <button>View Menu</button>
+                <button className='button'>View Menu</button>
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Home = () => {
           <h2>Gallery</h2>
           <HomeGallery />
           <a href='/gallery'>
-            <button>View Gallery</button>
+            <button className='button'>View Gallery</button>
           </a>
         </section>
 

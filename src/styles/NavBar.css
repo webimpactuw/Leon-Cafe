@@ -4,16 +4,24 @@ nav {
   padding: 16px 12%;
 }
 
-.nav-container {
+.nav-container,
+.nav-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   gap: 12%;
+}
 
-  max-width: 1512px;
-
+.nav-container {
+  position: relative;
+  justify-content: space-between;
   font-family: 'Julius Sans One', sans-serif;
+}
+
+.nav-menu {
+  flex-grow: 1;
+  justify-content: start;
+  max-width: 1512px;
 }
 
 .nav-links {
@@ -40,7 +48,7 @@ nav {
   border-bottom: 1px solid var(--color-text-dark);
 }
 
-.nav-container > img {
+.nav-logo {
   width: 72px;
   height: 72px;
 }
@@ -55,4 +63,97 @@ nav .social-icons {
 nav .social-icons img {
   width: 24px;
   aspect-ratio: 1;
+}
+
+.nav-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  padding: 0;
+}
+
+.open-icon {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.close-icon {
+  top: 28px;
+  right: 28px;
+  transform: translateX(-50%);
+}
+
+.mobile-only {
+  display: none;
+}
+
+.mobile-only hr {
+  border: 0.5px solid hsla(27, 19%, 38%, 1);
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.mobile-only h2 {
+  font-weight: bolder;
+}
+
+.mobile-only-location p {
+  max-width: 180px;
+}
+
+.mobile-only-footnote {
+  font-size: 12px;
+}
+
+@media (max-width: 699px) {
+  .open-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.expanded {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+  }
+
+  .nav-menu.expanded .close-icon {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-links li {
+    font-size: 24px;
+  }
+
+  .mobile-only {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  nav .social-icons img {
+    width: 40px;
+  }
 }

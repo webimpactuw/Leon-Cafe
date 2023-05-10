@@ -1,4 +1,4 @@
-button {
+.button {
   font-family: 'Nunito';
   background-color: transparent;
   color: var(--color-text-light);
@@ -8,7 +8,7 @@ button {
   transition: background-color linear 0.4s;
 }
 
-button:hover {
+.button:hover {
   background-color: #5f4a39;
   color: #ffffff;
 }
