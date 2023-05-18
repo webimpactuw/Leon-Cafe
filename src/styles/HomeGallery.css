@@ -15,7 +15,7 @@
 
 /* Buttons */
 .slideshowDotsContainer {
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.7;
   border-radius: 33.275px;
   padding: 5px;
@@ -41,9 +41,9 @@
   cursor: pointer;
   margin-right: 3.95px;
 
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .slideshowDot.active {
-  background-color: #7A7A7A;
+  background-color: #7a7a7a;
 }

@@ -1,23 +1,16 @@
 .location {
-  margin-right: auto;
-  margin-left: auto;
+  margin-inline: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-family: 'Nunito', sans-serif;
-  height: 473px;
+  padding-block: 120px;
+  text-align: center;
 }
 
 #locationMap {
   width: 516px;
   height: 288px;
-  margin-top: 93px;
-  margin-bottom: 92px;
-}
-
-.location__hours {
-  margin-top: 94.5px;
-  margin-bottom: 115.5px;
 }
 
 .location__hours h2 {
@@ -29,9 +22,7 @@
 }
 
 .location__hours p {
-  text-align: center;
   font-size: 18.75px;
-  margin-right: 180px;
 }
 
 .location__hours p:nth-child(2n) {
@@ -61,4 +52,16 @@
 
 #address {
   font-weight: 300;
+}
+
+@media (max-width: 999px) {
+  .location {
+    flex-direction: column;
+    gap: 40px;
+    padding-block: 64px;
+  }
+
+  .location__hours {
+    text-align: center;
+  }
 }

@@ -109,6 +109,10 @@ nav .social-icons img {
 }
 
 @media (max-width: 699px) {
+  nav {
+    padding-inline: 8%;
+  }
+
   .open-icon {
     display: block;
   }

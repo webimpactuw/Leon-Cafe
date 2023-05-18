@@ -45,18 +45,17 @@ const Home = () => {
         <section className='home__menu'>
           <div className='home__menu-row'>
             <img src='/img/teddyCoffeeHome.jpg' alt='Teddy Bear Coffee' />
-            <div className='home__menu-column'>
-              <h2>Menu</h2>
-              <p>
-                Indulge in our scrumptious cafe menu that offers a wide variety
-                of drinks, from creamy lattes to decadent affogatos, and food
-                options that range from savory sandwiches to mouth-watering
-                waffles.
-              </p>
-              <a href='/drinksMenu'>
-                <button className='button'>View Menu</button>
-              </a>
-            </div>
+            {/* <div className='home__menu-column'> */}
+            <h2>Menu</h2>
+            <p>
+              Indulge in our scrumptious cafe menu that offers a wide variety of
+              drinks, from creamy lattes to decadent affogatos, and food options
+              that range from savory sandwiches to mouth-watering waffles.
+            </p>
+            <a href='/drinksMenu'>
+              <button className='button'>View Menu</button>
+            </a>
+            {/* </div> */}
           </div>
         </section>
 
