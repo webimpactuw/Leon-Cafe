@@ -30,6 +30,8 @@
 
 .slideshowDots {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .slideshowDot {
@@ -39,7 +41,6 @@
   border-radius: 50%;
 
   cursor: pointer;
-  margin-right: 3.95px;
 
   background-color: #d9d9d9;
 }
