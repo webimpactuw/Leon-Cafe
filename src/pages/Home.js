@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 import Location from '../components/Location';
 import HomeGallery from '../components/HomeGallery';
@@ -7,26 +7,11 @@ import '../styles/Button.css';
 import chevron from '../assets/chevron_down.svg';
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
   const targetRef = useRef(null);
 
   const scrollDown = () => {
     targetRef.current.scrollIntoView({ behavior: 'smooth' });
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 500) {
-        setIsMobile(true);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <>
@@ -38,7 +23,7 @@ const Home = () => {
               <p id='moveUp'> Family-owned Mexican coffee house</p>
             </div>
           </div>
-          <button class={`${isMobile && 'visible'}`} onClick={scrollDown}>
+          <button onClick={scrollDown}>
             <img src={chevron} alt='Scroll Down' />
           </button>
         </section>

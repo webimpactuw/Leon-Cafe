@@ -2,26 +2,33 @@ footer {
   width: 100%;
 }
 
+footer p {
+  font-size: 16.67px;
+}
+
 .footer-container {
   background-color: var(--color-primary);
-  font-family: 'Nunito', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  height: 128px;
-  padding: 16px 12%;
-}
-
-.logotext-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 24px 8%;
 }
 
-.logotext-container > img {
+.footer-container > img {
   height: 75px;
   margin-right: 26.23px;
 }
 
+.footer-container .mobile-only {
+  display: none;
+}
+
+.text-container span {
+  color: var(--color-accent);
+}
+
 footer .social-icons {
+  margin-left: auto;
   display: flex;
   gap: 18px;
   flex-shrink: 0;
@@ -31,4 +38,29 @@ footer .social-icons {
 footer .social-icons img {
   width: 24px;
   aspect-ratio: 1;
+}
+
+@media (max-width: 599px) {
+  footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-container > img {
+    margin-right: 0;
+  }
+
+  .footer-container .mobile-only {
+    display: block;
+  }
+
+  footer .social-icons {
+    margin-left: 0;
+    margin-top: 16px;
+    gap: 8px;
+  }
 }

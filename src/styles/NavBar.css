@@ -86,25 +86,25 @@ nav .social-icons img {
   transform: translateX(-50%);
 }
 
-.mobile-only {
+.nav-menu .mobile-only {
   display: none;
 }
 
-.mobile-only hr {
+.nav-menu .mobile-only hr {
   border: 0.5px solid hsla(27, 19%, 38%, 1);
   margin-bottom: 32px;
   width: 100%;
 }
 
-.mobile-only h2 {
+.nav-menu .mobile-only h2 {
   font-weight: bolder;
 }
 
-.mobile-only-location p {
+.nav-menu .mobile-only-location p {
   max-width: 180px;
 }
 
-.mobile-only-footnote {
+.nav-menu .mobile-only-footnote {
   font-size: 12px;
 }
 
@@ -149,7 +149,7 @@ nav .social-icons img {
     font-size: 24px;
   }
 
-  .mobile-only {
+  .nav-menu .mobile-only {
     display: flex;
     flex-direction: column;
     text-align: center;

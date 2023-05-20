@@ -365,7 +365,7 @@
     transform: rotate(180deg);
   }
 
-  .home__landing button.visible {
+  .home__landing button {
     cursor: pointer;
     display: block;
     background-color: transparent;
