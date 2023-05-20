@@ -1,6 +1,5 @@
 .about__our-story {
-  height: 450px;
-  margin-top: 99.75px;
+  padding-block: 120px;
   position: relative;
   overflow: hidden;
 }
@@ -8,7 +7,7 @@
 .about__our-story > img {
   position: absolute;
   right: -17%;
-  top: -10%;
+  top: 8%;
 }
 
 .about__our-story-text {
@@ -19,16 +18,11 @@
 
 .about__our-story-text p {
   margin-right: 267.16px;
-  font-size: 18.75px;
-  font-family: 'Nunito', sans-serif;
   margin-bottom: 10px;
 }
 
 .about h2 {
-  font-weight: bolder;
-  font-size: 28.5px;
   margin-bottom: 28.25px;
-  text-shadow: 0.3px 0.3px var(--color-accent);
 }
 
 .about__our-story-text p span {
@@ -42,7 +36,6 @@
 }
 
 .about__location {
-  height: 473px;
   background-color: var(--color-primary);
 }
 

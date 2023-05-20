@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Nunito', sans-serif;
   padding-block: 120px;
   text-align: center;
 }
@@ -14,15 +13,7 @@
 }
 
 .location__hours h2 {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 28.5px;
-  font-weight: bolder;
   margin-bottom: 28.25px;
-  text-shadow: 0.3px 0.3px var(--color-accent);
-}
-
-.location__hours p {
-  font-size: 18.75px;
 }
 
 .location__hours p:nth-child(2n) {

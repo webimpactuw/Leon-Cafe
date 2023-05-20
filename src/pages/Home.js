@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <>
-      <main>
+      <main className='home'>
         <section className='home__landing'>
           <div className='home__welcome-banner'>
             <div className='home__welcome-text'>

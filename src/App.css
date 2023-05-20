@@ -52,6 +52,37 @@ h6 {
   --color-text-dark: #000000;
 }
 
+h1,
+h2,
+.photo_text {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 37.5px;
+  font-weight: bold;
+  line-height: 52px;
+  color: var(--color-text-dark);
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+h2,
+.photo_text {
+  color: var(--color-accent);
+}
+
+p {
+  font-size: 18.75px;
+  font-weight: 300;
+  font-family: 'Nunito';
+}
+
 /* For screen readers */
 .visually-hidden {
   position: absolute !important;
@@ -60,4 +91,19 @@ h6 {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }

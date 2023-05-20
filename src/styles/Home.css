@@ -19,16 +19,6 @@
   align-items: center;
 }
 
-.home__landing h1 {
-  font-weight: 400;
-}
-
-.home__landing h1,
-.home__landing p {
-  max-width: 90%;
-  margin-inline: auto;
-}
-
 .home__landing button {
   display: none;
 }
@@ -37,8 +27,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255, 0.8);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+
   padding-block: 34px;
   border-radius: 7.5px;
 }
@@ -47,17 +38,9 @@
   text-align: center;
 }
 
-.home__welcome-text h1 {
-  font-size: 37.5px;
-  font-weight: bold;
-  line-height: 52px;
-}
-
 .home__welcome-text p {
-  font-family: 'Nunito', sans-serif;
   font-size: 26.25px;
   line-height: 36px;
-  opacity: 0.9;
 }
 
 .home__about-box {
@@ -80,15 +63,7 @@
   padding: 40px 80px;
 }
 
-.home__about-column h2 {
-  font-size: 37.5px;
-  font-weight: bolder;
-  color: var(--color-accent);
-  line-height: 52.5px;
-}
-
 .home__about-column p {
-  font-size: 18.75px;
   line-height: 25.58px;
 }
 
@@ -120,12 +95,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
-}
-
-.home__menu h2 {
-  font-size: 30px;
-  font-weight: bolder;
-  text-shadow: 0.3px 0.3px var(--color-accent);
 }
 
 .home__menu p {
@@ -200,11 +169,6 @@
 }
 
 .home__gallery h2 {
-  font-weight: bolder;
-  font-size: 28.5px;
-  line-height: 31px;
-  color: var(--color-accent);
-  text-shadow: 0.3px 0.3px var(--color-accent);
   padding: 40px 0;
 }
 
@@ -221,29 +185,6 @@
   margin: 40px 0;
   padding: 0.8% 1.2%;
   border-radius: 5.25px;
-}
-
-h1,
-h2,
-.photo_text {
-  font-family: 'Julius Sans One';
-  font-style: normal;
-  font-weight: 400;
-}
-
-h1 {
-  color: var(--color-text-dark);
-}
-
-h2,
-.photo_text {
-  color: var(--color-accent);
-}
-
-p {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 300;
 }
 
 #moveDown {
@@ -325,9 +266,20 @@ p {
 }
 
 @media (max-width: 699px) {
+  .home__landing h1,
+  .home__landing p {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
   .home__menu-row,
   .home__gallery img {
     width: 80%;
+  }
+
+  .home__about-row {
+    padding-inline: 56px;
+    gap: 16px;
   }
 
   .home__photos {
@@ -363,10 +315,6 @@ p {
     width: 90%;
   }
 
-  .home__welcome-text h1 {
-    font-size: 32px;
-  }
-
   .home__welcome-text p {
     font-size: 24px;
   }
@@ -382,6 +330,11 @@ p {
     justify-content: space-between;
     padding-block: 64px 16px;
     position: relative;
+  }
+
+  .home__about-row {
+    padding: 32px 24px;
+    gap: 8px;
   }
 
   .home__welcome-banner {
@@ -418,11 +371,6 @@ p {
     background-color: transparent;
     border: none;
     z-index: 999;
-  }
-
-  .home__welcome-text h1 {
-    font-size: 28px;
-    line-height: 40px;
   }
 
   .home__welcome-text p {
