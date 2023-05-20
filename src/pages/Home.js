@@ -1,9 +1,33 @@
+import { useState, useEffect, useRef } from 'react';
+
 import Location from '../components/Location';
 import HomeGallery from '../components/HomeGallery';
 import '../styles/Home.css';
 import '../styles/Button.css';
+import chevron from '../assets/chevron_down.svg';
 
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+  const targetRef = useRef(null);
+
+  const scrollDown = () => {
+    targetRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 500) {
+        setIsMobile(true);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <main>
@@ -11,12 +35,15 @@ const Home = () => {
           <div className='home__welcome-banner'>
             <div className='home__welcome-text'>
               <h1 id='moveDown'> Welcome To Leon Coffee House</h1>
-              <p id='moveUp'> Family owned Mexican coffee house</p>
+              <p id='moveUp'> Family-owned Mexican coffee house</p>
             </div>
           </div>
+          <button class={`${isMobile && 'visible'}`} onClick={scrollDown}>
+            <img src={chevron} alt='Scroll Down' />
+          </button>
         </section>
 
-        <section className='home__about-box'>
+        <section className='home__about-box' ref={targetRef}>
           <div className='home__about-border'>
             <div className='home__about-row'>
               <div className='home__about-column'>
@@ -45,7 +72,6 @@ const Home = () => {
         <section className='home__menu'>
           <div className='home__menu-row'>
             <img src='/img/teddyCoffeeHome.jpg' alt='Teddy Bear Coffee' />
-            {/* <div className='home__menu-column'> */}
             <h2>Menu</h2>
             <p>
               Indulge in our scrumptious cafe menu that offers a wide variety of
@@ -55,7 +81,6 @@ const Home = () => {
             <a href='/drinksMenu'>
               <button className='button'>View Menu</button>
             </a>
-            {/* </div> */}
           </div>
         </section>
 

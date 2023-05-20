@@ -10,10 +10,11 @@
   background-image: url('../../public/img/resutaurantFront.jpg');
   opacity: 0.75;
   height: 464px;
-  background-position: center;
+  background-position: 58%;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -22,13 +23,23 @@
   font-weight: 400;
 }
 
+.home__landing h1,
+.home__landing p {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+.home__landing button {
+  display: none;
+}
+
 .home__welcome-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255, 0.7);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
-  height: 156px;
+  padding-block: 34px;
   border-radius: 7.5px;
 }
 
@@ -352,8 +363,70 @@ p {
     width: 90%;
   }
 
+  .home__welcome-text h1 {
+    font-size: 32px;
+  }
+
+  .home__welcome-text p {
+    font-size: 24px;
+  }
+
   .home__image-banner img {
     height: 320px;
     object-position: left;
+  }
+}
+
+@media (max-width: 499px) {
+  .home__landing {
+    justify-content: space-between;
+    padding-block: 64px 16px;
+    position: relative;
+  }
+
+  .home__welcome-banner {
+    padding-block: 18px;
+  }
+
+  .home__welcome-banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 99.39px;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.979167) 0.01%,
+      rgba(0, 0, 0, 0.954687) 0.02%,
+      rgba(0, 0, 0, 0.950083) 0.03%,
+      #424242 0.04%,
+      rgba(81, 81, 81, 0.32) 43.43%,
+      rgba(143, 143, 143, 0.12) 61.7%,
+      rgba(159, 158, 158, 0) 78.36%,
+      rgba(0, 0, 0, 0) 100%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    transform: rotate(180deg);
+  }
+
+  .home__landing button.visible {
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+    border: none;
+    z-index: 999;
+  }
+
+  .home__welcome-text h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .home__welcome-text p {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
