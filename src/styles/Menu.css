@@ -1,13 +1,13 @@
-main {
+.menu {
   font-family: 'Julius Sans One', sans-serif;
+  padding-block: 56px;
 }
 
 .menu__headers ul {
   display: flex;
   justify-content: center;
   font-size: 28.5px;
-  margin-top: 55.5px;
-
+  padding: 0;
 }
 
 .menu__headers li {
@@ -21,44 +21,79 @@ main {
 }
 
 .menu__headers span {
-  margin-right: 29.25px;
-  margin-left: 29.25px;
+  margin-inline: 29.25px;
 }
 
 .menu__image {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 47px;
 }
 
 .menu__image img {
-  margin-bottom: 47px;
-  width: 655.5px;
-  height: 927.75px;
   border: 1px solid;
   border-radius: 3.75px;
 }
 
 .menu__download {
-  max-width: 655.5px;
   display: flex;
   flex-direction: row;
-  margin: 36.5px auto 9px auto;
-  margin-bottom: 9px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 36.5px auto 9px;
   justify-content: flex-end;
+  gap: 14px;
 }
 
-.menu__download a {
-  font-family: 'Julius Sans One', sans-serif;
+.menu__download img {
+  width: 20px;
+}
+
+.menu__download,
+.menu__image img {
+  width: 655.5px;
+  max-width: 80%;
+}
+
+.menu__download a:first-child {
   font-size: 16.5px;
   font-weight: bold;
-  margin-right: 14px;
   text-decoration: none;
   color: var(--color-text-dark);
 }
 
 .pink-bg {
-  background-color: #FCE5F7;
+  background-color: #fce5f7;
+}
+
+@media (max-width: 699px) {
+  .menu__headers ul {
+    font-size: 24px;
+  }
+
+  .menu__headers span {
+    margin-inline: 18px;
+  }
+
+  .menu__image {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 499px) {
+  .menu {
+    padding-block: 32px;
+  }
+
+  .menu__headers ul {
+    font-size: 20px;
+  }
+
+  .menu__headers span {
+    margin-inline: 10px;
+  }
+
+  .menu__download,
+  .menu__image img {
+    max-width: 90%;
+  }
 }

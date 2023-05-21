@@ -14,7 +14,7 @@ const WafflesMenu = () => {
 
   return (
     <>
-      <main className='menu__main'>
+      <main className='menu'>
         <h1 className='visually-hidden'>Waffles Menu</h1>
         <section className='menu__headers'>
           <ul>

@@ -13,7 +13,7 @@ const DrinksMenu = () => {
 
   return (
     <>
-      <main>
+      <main className='menu'>
         <h1 className='visually-hidden'>Drinks Menu</h1>
         <section className='menu__headers'>
           <ul>

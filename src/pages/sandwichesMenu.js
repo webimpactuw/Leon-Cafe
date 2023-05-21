@@ -14,7 +14,7 @@ const SandwichesMenu = () => {
 
   return (
     <>
-      <main className='menu__main'>
+      <main className='menu'>
         <h1 className='visually-hidden'>Sandwiches Menu</h1>
         <section className='menu__headers'>
           <ul>
