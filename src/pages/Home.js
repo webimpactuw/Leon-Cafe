@@ -52,7 +52,14 @@ const Home = () => {
         </section>
 
         <section className='home__image-banner'>
-          <img src='/img/homeCashier.jpg' alt='' />
+          <picture>
+            <source
+              srcSet='/img/homeCashierMobile.jpg'
+              media='(max-width: 699px)'
+            />
+            <source srcSet='/img/homeCashier.jpg' media='(min-width: 700px)' />
+            <img src='/img/homeCashier.jpg' alt='' />
+          </picture>
         </section>
 
         <section className='home__menu'>

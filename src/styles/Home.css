@@ -68,9 +68,10 @@
 }
 
 .home__image-banner img {
-  height: 480px;
+  height: 560px;
+  width: 100%;
   object-fit: cover;
-  margin-bottom: 0;
+  object-position: top;
 }
 
 .home__menu {
@@ -229,6 +230,10 @@
   .home__menu-row p {
     font-size: 18px;
   }
+
+  .home__image-banner img {
+    height: 480px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -328,6 +333,10 @@
     left: 0;
   }
 
+  .home__photos a:nth-child(2) > img {
+    object-position: 50% 51.5%;
+  }
+
   .home__gallery {
     padding-block: 16px;
   }
@@ -348,11 +357,6 @@
 
   .home__welcome-text p {
     font-size: 24px;
-  }
-
-  .home__image-banner img {
-    height: 320px;
-    object-position: left;
   }
 }
 
@@ -407,5 +411,10 @@
   .home__welcome-text p {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .home__image-banner img {
+    height: 320px;
+    object-position: left;
   }
 }
