@@ -4,7 +4,8 @@ import Location from '../components/Location';
 import HomeGallery from '../components/HomeGallery';
 import '../styles/Home.css';
 import '../styles/Button.css';
-import chevron from '../assets/chevron_down.svg';
+import chevronDown from '../assets/chevron_down.svg';
+import chevronRight from '../assets/chevron_right.svg';
 
 const Home = () => {
   const targetRef = useRef(null);
@@ -24,7 +25,7 @@ const Home = () => {
             </div>
           </div>
           <button onClick={scrollDown}>
-            <img src={chevron} alt='Scroll Down' />
+            <img src={chevronDown} alt='Scroll Down' />
           </button>
         </section>
 
@@ -73,19 +74,28 @@ const Home = () => {
           <a href='/sandwichesmenu'>
             <img src='/img/homeSandwiches.png' alt='Sandwich with chips' />
             <div className='overlay'>
-              <p className='photo_text'>SANDWICHES</p>
+              <p className='photo_text'>
+                Sandwiches
+                <img src={chevronRight} alt='' />
+              </p>
             </div>
           </a>
           <a href='/wafflesmenu'>
             <img src='/img/wafflesHome.jpg' alt='Matcha Waffles' />
             <div className='overlay'>
-              <p className='photo_text'>WAFFLES</p>
+              <p className='photo_text'>
+                Waffles
+                <img src={chevronRight} alt='' />
+              </p>
             </div>
           </a>
           <a href='/drinksmenu'>
             <img src='/img/coffeeHomeBrighter.jpg' alt='Latte Art' />
             <div className='overlay'>
-              <p className='photo_text'>DRINKS</p>
+              <p className='photo_text'>
+                Drinks
+                <img src={chevronRight} alt='' />
+              </p>
             </div>
           </a>
         </section>

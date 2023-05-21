@@ -148,6 +148,10 @@
   transition: opacity linear 0.2s;
 }
 
+.home__photos .photo_text img {
+  display: none;
+}
+
 .home__photos > *:hover .overlay {
   opacity: 1;
 }
@@ -295,6 +299,36 @@
 
   .home__photos img {
     aspect-ratio: 2.275 / 1;
+  }
+
+  .overlay {
+    opacity: 1;
+  }
+
+  .home__photos .photo_text {
+    top: auto;
+    right: auto;
+    left: 4%;
+    bottom: 2%;
+    transform: none;
+    font-size: 32px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .home__photos .photo_text img {
+    display: inline;
+    height: 100%;
+    aspect-ratio: initial;
+  }
+
+  .home__photos .photo_text::before {
+    content: 'View ';
+    position: absolute;
+    top: -75%;
+    left: 0;
   }
 
   .home__gallery {
