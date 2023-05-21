@@ -10,20 +10,18 @@ const About = () => {
         <section className='about__our-story'>
           <img src='/img/aboutLogo.png' alt='' />
           <div className='about__our-story-text'>
+            <h2>Our Story</h2>
             <img src='/img/aboutOurStory.png' alt='' />
-            <div>
-              <h2>Our Story</h2>
-              <p>
-                Leon Coffee House was created to
-                <span> celebrate Latin heritage</span>. U District was the
-                perfect place to share this culture with others. The staff love
-                what they do.
-              </p>
-              <p>
-                Our hope is for you to enjoy Leon Coffee House as much as we do,
-                and it is our pleasure to serve you.
-              </p>
-            </div>
+            <p>
+              Leon Coffee House was created to
+              <span> celebrate Latin heritage</span>. U District was the perfect
+              place to share this culture with others. The staff love what they
+              do.
+            </p>
+            <p>
+              Our hope is for you to enjoy Leon Coffee House as much as we do,
+              and it is our pleasure to serve you.
+            </p>
           </div>
         </section>
 

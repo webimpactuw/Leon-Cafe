@@ -45,6 +45,10 @@ footer .social-icons img {
     text-align: center;
   }
 
+  footer p {
+    font-size: 14px;
+  }
+
   .footer-container {
     flex-direction: column;
     gap: 16px;

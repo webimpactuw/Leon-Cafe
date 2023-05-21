@@ -11,18 +11,13 @@
 }
 
 .about__our-story-text {
-  display: flex;
-  justify-content: center;
-  gap: 120.75px;
+  display: grid;
 }
 
 .about__our-story-text p {
-  margin-right: 267.16px;
-  margin-bottom: 10px;
 }
 
 .about h2 {
-  margin-bottom: 28.25px;
 }
 
 .about__our-story-text p span {
@@ -30,9 +25,9 @@
 }
 
 .about__our-story-text img {
-  margin-left: 312.58px;
   width: 437.25px;
-  height: 351px;
+  z-index: 1;
+  border-radius: 4px;
 }
 
 .about__location {
@@ -40,11 +35,78 @@
 }
 
 .about__social-media {
-  padding: 80px 10%;
+  padding-block: 80px;
   display: flex;
   justify-content: space-around;
 }
 
 .about__social-media-text {
   max-width: 300px;
+}
+
+.about__social-media .socials-container {
+  border-radius: 4px;
+}
+
+@media (max-width: 699px) {
+  .about p {
+    font-size: 15px;
+  }
+
+  .about__our-story {
+    padding-block: 32px;
+  }
+
+  .about__our-story > img {
+    width: 320px;
+    position: absolute;
+    top: 60%;
+  }
+
+  .about__our-story-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .about__our-story-text img {
+    width: 100%;
+  }
+
+  .about__social-media {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    width: 90%;
+    margin-inline: auto;
+    padding-block: 40px;
+  }
+
+  .about__social-media-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about__social-media-text {
+    text-align: center;
+  }
+
+  .about__social-media .socials-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about__social-media .socials-block {
+    max-width: 90%;
+    padding-block: 32px;
+  }
+
+  .about__social-media img {
+    width: 54px;
+  }
 }

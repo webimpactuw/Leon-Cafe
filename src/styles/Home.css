@@ -53,7 +53,7 @@
 
 .home__about-border {
   border: 0.75px solid var(--color-accent);
-  border-radius: 3.75px;
+  border-radius: 4px;
 }
 
 .home__about-row {
@@ -356,6 +356,10 @@
 
   .home__photos {
     padding-block: 48px;
+  }
+
+  .home__menu p {
+    font-size: 16px;
   }
 }
 

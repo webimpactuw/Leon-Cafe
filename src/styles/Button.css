@@ -3,7 +3,6 @@
   background-color: transparent;
   color: var(--color-text-light);
   border: 1px solid var(--color-text-light);
-  border-radius: 2px;
   cursor: pointer;
   transition: background-color linear 0.4s;
 }
