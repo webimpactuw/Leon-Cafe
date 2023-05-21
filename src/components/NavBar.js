@@ -6,19 +6,6 @@ import hamburgerIcon from '../assets/hamburger_icon.svg';
 import closeIcon from '../assets/close_icon.svg';
 
 const NavBar = () => {
-  // const [isDrinksMenuClicked, setIsDrinksMenuClicked] = useState(false);
-
-  // const handleMenuClick = () => {
-  //   setIsDrinksMenuClicked(true);
-  // };
-
-  // const [isMenuClicked, setIsMenuClicked] = useState(false);
-  // const location = useLocation();
-
-  // const handleMenuClick = () => {
-  //   setIsMenuClicked(true);
-  // };
-
   const location = useLocation();
   const [isMenuClicked, setIsMenuClicked] = useState(false);
   const [isMenuExpanded, setIsMenuExpanded] = useState(false);
@@ -49,12 +36,12 @@ const NavBar = () => {
             <img src={closeIcon} alt='Close menu' />
           </button>
           <ul className='nav-links'>
-            <li>
+            <li onClick={toggleMenu}>
               <NavLink to='/' className='link'>
                 Home
               </NavLink>
             </li>
-            <li>
+            <li onClick={toggleMenu}>
               <NavLink
                 to='/drinksmenu'
                 className='link'
@@ -63,12 +50,12 @@ const NavBar = () => {
                 Menu
               </NavLink>
             </li>
-            <li>
+            <li onClick={toggleMenu}>
               <NavLink to='/gallery' className='link'>
                 Gallery
               </NavLink>
             </li>
-            <li>
+            <li onClick={toggleMenu}>
               <NavLink to='/about' className='link'>
                 About
               </NavLink>
@@ -117,8 +104,6 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {/* <DrinksMenu isDrinksMenuClicked={isDrinksMenuClicked} />  Sorta work, but menu is appearing on top of every page */}
-      {/* {location.pathname === '/drinksmenu' && <DrinksMenu isMenuClicked={isMenuClicked} />} */}
       {isMenuClicked && <DrinksMenu />}
     </nav>
   );
