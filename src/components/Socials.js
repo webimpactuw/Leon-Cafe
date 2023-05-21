@@ -1,4 +1,4 @@
-import '../styles/Socials.css'
+import '../styles/Socials.css';
 const Socials = () => {
   return (
     <div className='socials-container'>
@@ -17,12 +17,7 @@ const Socials = () => {
           </div>
         </div>
         <div>
-          <img
-            src='/img/facebook.svg'
-            alt='Facebook'
-            width='64'
-            height='64'
-          />
+          <img src='/img/facebook.svg' alt='Facebook' width='64' height='64' />
           <div>
             <p>@leoncoffeehouseseattle</p>
             <p>Like us on Facebook!</p>
@@ -30,7 +25,7 @@ const Socials = () => {
         </div>
       </article>
     </div>
-  )
-}
+  );
+};
 
-export default Socials
+export default Socials;

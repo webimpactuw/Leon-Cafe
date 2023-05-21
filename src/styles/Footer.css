@@ -11,7 +11,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 8%;
+  padding: 24px 12%;
 }
 
 .footer-container > img {

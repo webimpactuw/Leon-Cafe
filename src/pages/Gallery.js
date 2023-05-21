@@ -14,7 +14,19 @@ const Gallery = () => {
         <img className='item-6' src='/img/galleryStairs.png' alt='' />
 
         <div className='item-7'>
-          <Socials className='gallery__socials' />
+          <Socials />
+          <div className='mobile-only'>
+            <img
+              src='/img/instagram.svg'
+              alt='Instagram'
+              width='64'
+              height='64'
+            />
+            <div>
+              <p>Check out our Instagram for more photos!</p>
+              <p>@leoncoffeehouse</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
