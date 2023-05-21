@@ -26,6 +26,25 @@
   height: 100%;
 }
 
+.item-1 {
+  aspect-ratio: 5/4;
+  object-position: 50% 10%;
+}
+
+.item-2 {
+  order: 1;
+}
+
+.item-3 {
+  aspect-ratio: 10/7;
+  object-position: right;
+}
+
+.item-6,
+.item-7 {
+  order: 2;
+}
+
 .gallery .socials-container {
   padding-inline: 0;
 }
