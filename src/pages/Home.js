@@ -79,7 +79,17 @@ const Home = () => {
 
         <section className='home__photos'>
           <a href='/sandwichesmenu'>
-            <img src='/img/homeSandwiches.png' alt='Sandwich with chips' />
+            <picture>
+              <source
+                srcSet='/img/homeSandwichesMobile.jpg'
+                media='(max-width: 699px)'
+              />
+              <source
+                srcSet='/img/homeSandwiches.jpg'
+                media='(min-width: 700px)'
+              />
+              <img src='/img/homeSandwiches.jpg' alt='Sandwich with chips' />
+            </picture>
             <div className='overlay'>
               <p className='photo_text'>
                 Sandwiches

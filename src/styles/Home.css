@@ -7,7 +7,7 @@
 }
 
 .home__landing {
-  background-image: url('../../public/img/resutaurantFront.jpg');
+  background-image: url('../../public/img/restaurantFront.jpg');
   opacity: 0.75;
   height: 464px;
   background-position: 58%;
@@ -167,10 +167,7 @@
 .home__gallery {
   background-color: var(--color-primary);
   text-align: center;
-}
-
-.home__gallery h2 {
-  padding: 40px 0;
+  padding-block: 48px;
 }
 
 .home__gallery img {
@@ -183,8 +180,7 @@
 
 .home__gallery button {
   font-size: 18.75px;
-  margin: 40px 0;
-  padding: 0.8% 1.2%;
+  padding: 8px 16px;
   border-radius: 5.25px;
 }
 
@@ -256,11 +252,14 @@
 
   .home__menu-row img {
     aspect-ratio: 3 / 2;
+    object-position: 50% 30%;
   }
 }
 
 @media (max-width: 900px) {
-  .home__about-box {
+  .home__about-box,
+  .home__photos,
+  .location {
     padding-block: 48px;
   }
 
@@ -337,10 +336,6 @@
     object-position: 50% 51.5%;
   }
 
-  .home__gallery {
-    padding-block: 16px;
-  }
-
   .home__gallery img {
     aspect-ratio: 1.6 / 1;
   }
@@ -357,6 +352,10 @@
 
   .home__welcome-text p {
     font-size: 24px;
+  }
+
+  .home__photos {
+    padding-block: 48px;
   }
 }
 
@@ -416,5 +415,9 @@
   .home__image-banner img {
     height: 320px;
     object-position: left;
+  }
+
+  .home__menu-row {
+    padding-block: 32px;
   }
 }
