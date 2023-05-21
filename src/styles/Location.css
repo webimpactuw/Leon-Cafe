@@ -9,7 +9,7 @@
 
 #locationMap {
   width: 516px;
-  height: 288px;
+  aspect-ratio: initial;
 }
 
 .location__hours h2 {
@@ -30,15 +30,15 @@
   font-weight: 400;
 }
 
+.location__address {
+  display: flex;
+  align-items: center;
+}
+
 .location__address img {
   width: 19.5px;
   height: 19.5px;
   margin-right: 6px;
-}
-
-.about__location .location__address {
-  display: flex;
-  align-items: center;
 }
 
 #address {
@@ -54,5 +54,15 @@
 
   .location__hours {
     text-align: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .location__address {
+    display: none;
+  }
+
+  .location__hours p:nth-child(6) {
+    margin-bottom: 0;
   }
 }
