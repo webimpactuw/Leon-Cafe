@@ -93,8 +93,10 @@ p {
   white-space: nowrap;
 }
 
-body:has(.nav-menu.expanded) {
-  overflow: hidden;
+@media (max-width: 699px) {
+  body:has(.nav-menu.expanded) {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 599px) {

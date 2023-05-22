@@ -185,12 +185,12 @@
 }
 
 #moveDown {
-  -webkit-animation: movingDown 3s;
-  animation: movingDown 3s;
+  -webkit-animation: movingDown 500ms;
+  animation: movingDown 500ms;
 }
 #moveUp {
-  -webkit-animation: movingUp 3s;
-  animation: movingUp 3s;
+  -webkit-animation: movingUp 500ms;
+  animation: movingUp 500ms;
 }
 
 @keyframes movingDown {

@@ -58,7 +58,7 @@ const WafflesMenu = () => {
         </section>
 
         <section className='menu__image'>
-          <img src='/img/wafflesMenu.png' />
+          <img src='/img/wafflesMenu.jpg' />
         </section>
       </main>
     </>

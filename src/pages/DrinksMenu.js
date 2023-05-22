@@ -58,8 +58,8 @@ const DrinksMenu = () => {
         </section>
 
         <section className='menu__image'>
-          <img src='/img/drinksMenu1.png' />
-          <img src='/img/drinksMenu2.png' />
+          <img src='/img/drinksMenu1.jpg' />
+          <img src='/img/drinksMenu2.jpg' />
         </section>
       </main>
     </>

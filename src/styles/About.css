@@ -42,7 +42,7 @@
   .about__our-story-text {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     max-height: 520px;
     width: 67%;

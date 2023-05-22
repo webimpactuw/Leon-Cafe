@@ -6,7 +6,13 @@ const Gallery = () => {
     <section className='gallery'>
       <h1>Gallery</h1>
       <div className='gallery__grid'>
-        <img className='item-1' src='/img/flowerGallery.jpg' alt='' />
+        <img
+          className='item-1'
+          src='/img/flowerGallery.jpg'
+          alt=''
+          width='300'
+          height='500'
+        />
         <img className='item-2' src='/img/heartGallery.jpg' alt='' />
         <img className='item-3' src='/img/galleryFront.png' alt='' />
         <img className='item-4' src='/img/galleryCoffee.png' alt='' />
