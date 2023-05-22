@@ -11,7 +11,7 @@ const About = () => {
           <img src='/img/aboutLogo.png' alt='' />
           <div className='about__our-story-text'>
             <h2>Our Story</h2>
-            <img src='/img/aboutOurStory.png' alt='' />
+            <img src='/img/aboutOurStory.png' alt='' width='399' height='320' />
             <p>
               Leon Coffee House was created to
               <span> celebrate Latin heritage</span>. U District was the perfect

@@ -53,12 +53,12 @@ const WafflesMenu = () => {
             Download PDF
           </a>
           <a href={menu} download='Menu'>
-            <img src='/img/downloadIcon.svg' />
+            <img src='/img/downloadIcon.svg' alt='Download waffles menu' />
           </a>
         </section>
 
         <section className='menu__image'>
-          <img src='/img/wafflesMenu.jpg' />
+          <img src='/img/wafflesMenu.jpg' alt='' width='654' height='925' />
         </section>
       </main>
     </>

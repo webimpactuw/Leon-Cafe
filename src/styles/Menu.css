@@ -51,6 +51,7 @@
 .menu__download,
 .menu__image img {
   width: 655.5px;
+  height: auto;
   max-width: 80%;
 }
 

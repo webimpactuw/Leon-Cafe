@@ -53,13 +53,13 @@ const DrinksMenu = () => {
             Download PDF
           </a>
           <a href={menu} download='Menu'>
-            <img src='/img/downloadIcon.svg' />
+            <img src='/img/downloadIcon.svg' alt='Download drinksmenu' />
           </a>
         </section>
 
         <section className='menu__image'>
-          <img src='/img/drinksMenu1.jpg' />
-          <img src='/img/drinksMenu2.jpg' />
+          <img src='/img/drinksMenu1.jpg' alt='' width='654' height='925' />
+          <img src='/img/drinksMenu2.jpg' alt='' width='654' height='925' />
         </section>
       </main>
     </>
