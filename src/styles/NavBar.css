@@ -119,22 +119,26 @@ nav .social-icons img {
   }
 
   .nav-menu {
-    display: none;
-  }
-
-  .nav-menu.expanded {
+    position: fixed;
     padding: 50vh 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
-    left: 0;
-    top: 0;
     background-color: var(--color-primary);
     height: 100vh;
     width: 100vw;
     z-index: 9999;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: 350ms;
+  }
+
+  .nav-menu.expanded {
+    left: 0;
+    transform: translateX(0%);
   }
 
   .nav-menu.expanded .close-icon {
