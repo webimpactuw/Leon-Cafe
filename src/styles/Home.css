@@ -19,7 +19,8 @@
   align-items: center;
   position: relative;
   justify-content: space-between;
-  padding-block: 200px 24px;
+  padding-block: 200px 56px;
+  transition: 350ms ease-in-out;
 }
 
 .home__landing button {
@@ -28,6 +29,7 @@
   background-color: transparent;
   border: none;
   z-index: 999;
+  padding-inline: 0;
 }
 
 .home__welcome-banner::before {
@@ -162,6 +164,15 @@
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
+  transition: transform 350ms;
+}
+
+.home__photos a {
+  overflow: hidden;
+}
+
+.home__photos a:hover img {
+  transform: scale(1.25);
 }
 
 .overlay {
@@ -397,6 +408,20 @@
 
   .home__menu p {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 500px) {
+  .home__landing button img {
+    height: 32px;
+  }
+
+  .home__landing:has(button:hover) {
+    padding-bottom: 24px;
+  }
+
+  .home__landing button:hover {
+    padding-top: 32px;
   }
 }
 
