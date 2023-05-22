@@ -269,6 +269,12 @@
   }
 }
 
+@media (max-width: 799px) {
+  .home__photos .photo_text {
+    font-size: 26px;
+  }
+}
+
 @media (max-width: 699px) {
   .home__landing h1,
   .home__landing p {
