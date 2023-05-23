@@ -33,6 +33,7 @@
 .location__address {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .location__address img {
