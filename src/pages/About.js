@@ -26,7 +26,7 @@ const About = () => {
         </section>
 
         <section className='about__location'>
-          <Location />
+          <Location animation='fadeIn'/>
         </section>
 
         <section className='about__social-media'>
