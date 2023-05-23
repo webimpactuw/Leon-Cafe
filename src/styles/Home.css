@@ -297,6 +297,11 @@
     aspect-ratio: 3 / 2;
     object-position: 50% 30%;
   }
+
+  .home__menu-viewMenu {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 900px) {
@@ -328,6 +333,11 @@
   .home__menu-row,
   .home__gallery img {
     width: 80%;
+  }
+
+  .home__menu-viewMenu {
+    display: flex;
+    justify-content: center;
   }
 
   .home__about-row {
@@ -410,7 +420,6 @@
   .home__menu p {
     font-size: 16px;
   }
-  
 }
 
 @media (min-width: 500px) {

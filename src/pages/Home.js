@@ -110,10 +110,11 @@ const Home = () => {
                 drinks, from creamy lattes to decadent affogatos, and food options
                 that range from savory sandwiches to mouth-watering waffles.
               </p>
-              
-              <a href='/drinksMenu'>
-                <button className='button' style={{marginTop: '10px'}}>View Menu</button>
-              </a>
+              <div className='home__menu-viewMenu'>
+                <a href='/drinksMenu'>
+                  <button className='button' style={{marginTop: '10px'}}>View Menu</button>
+                </a>
+              </div>
             </AnimationOnScroll>
           </div>
         </section>
