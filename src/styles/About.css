@@ -114,6 +114,10 @@
     font-size: 16px;
   }
 
+  .about__our-story-text p{
+    text-align: left;
+  }
+
   .about__our-story {
     padding-block: 64px;
   }
@@ -182,12 +186,17 @@
     font-size: 15px;
   }
 
+  .about__our-story-text {
+    text-align: left;
+  }
+
   .about__social-media .socials-block {
     max-width: 90%;
   }
 
   .about__social-media-text p {
     width: 100%;
+    text-align: left;
   }
 }
 
