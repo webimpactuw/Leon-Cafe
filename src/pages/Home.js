@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import Location from '../components/Location';
 import HomeGallery from '../components/HomeGallery';
@@ -11,18 +11,43 @@ import "animate.css/animate.min.css";
 
 const Home = () => {
   const targetRef = useRef(null);
-
   const scrollDown = () => {
     targetRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+  // updates animations based on screen width
+  const animationsDefault = ['animate__fadeIn', 'animate__fadeInLeft', 'animate__fadeInRight', 'animate__zoomIn']; 
+  const animationsMobile = ['animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn']; 
+  const [screenSize, setScreenSize] = useState(getScreenSize());
+  const [animations, setAnimations] = useState(animationsMobile);
 
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getScreenSize())
+    }
+    window.addEventListener('resize', updateDimension);
+    if (screenSize.width < 1000) {
+      setAnimations(animationsMobile);
+    } else {
+      setAnimations(animationsDefault);
+    }
+    return(() => {
+      window.removeEventListener('resize', updateDimension);
+    })
+  }, [screenSize])
+
+  function getScreenSize() {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight
+    }
+  }
 
   return (
     <>
       <main className='home'>
         <section className='home__landing'>
           <div className='home__welcome-banner'>
-          <AnimationOnScroll initiallyVisible={true} animateOnce={true} animateIn="animate__fadeIn">
+          <AnimationOnScroll initiallyVisible={true} animateOnce={true} animateIn={animations[0]}>
             <div className='home__welcome-text'>
               <h1 id='moveDown'> Welcome To Leon Coffee House</h1>
               <p id='moveUp'> Family-owned Mexican coffee house</p>
@@ -39,13 +64,13 @@ const Home = () => {
           <div className='home__about-border'>
             <div className='home__about-row'>
               <div className='home__about-column'>
-                <AnimationOnScroll animateIn="animate__fadeInLeft">
+                <AnimationOnScroll animateIn={animations[1]}>
                 <h2>About</h2>
                 </AnimationOnScroll>
                 
               </div>
               <div className='home__about-column'>
-                <AnimationOnScroll animateIn="animate__fadeInRight">
+                <AnimationOnScroll animateIn={animations[2]}>
                 <p>
                   <b>
                     Leon Coffee House is a cozy and welcoming cafe in the heart
@@ -75,10 +100,10 @@ const Home = () => {
 
         <section className='home__menu'>
           <div className='home__menu-row'>
-            <AnimationOnScroll animateIn="animate__zoomIn">
+            <AnimationOnScroll animateIn={animations[3]}>
             <img src='/img/teddyCoffeeHome.jpg' alt='Teddy Bear Coffee' />
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__fadeInRight">
+            <AnimationOnScroll animateIn={animations[2]}>
               <h2>Menu</h2>
               <p>
                 Indulge in our scrumptious cafe menu that offers a wide variety of
@@ -142,7 +167,7 @@ const Home = () => {
         </section>
 
         <section className='home__location'>
-          <Location />
+          <Location animation={animations[3]}/>
         </section>
       </main>
     </>

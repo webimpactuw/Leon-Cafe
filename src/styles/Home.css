@@ -256,6 +256,7 @@
   }
 }
 
+
 @media (max-width: 1199px) {
   .home__welcome-banner,
   .home__about-border,
@@ -409,6 +410,7 @@
   .home__menu p {
     font-size: 16px;
   }
+  
 }
 
 @media (min-width: 500px) {

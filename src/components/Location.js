@@ -2,7 +2,7 @@ import '../styles/Location.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import "animate.css/animate.min.css";
 
-const Location = () => {
+const Location = (props) => {
   return (
     <>
       <section className='location'>
@@ -29,7 +29,7 @@ const Location = () => {
           </AnimationOnScroll>
         </div>
         <a href='https://www.google.com/maps/place/Leon+Coffee+House/@47.6612576,-122.3164046,17z/data=!3m2!4b1!5s0x5490148adbdbf163:0x8fbd44d396a8ceeb!4m6!3m5!1s0x5490157702be5fd5:0x896d80d8e8ab75f8!8m2!3d47.6612576!4d-122.3138297!16s%2Fg%2F11p781d2tf'>
-          <AnimationOnScroll animateIn="animate__zoomIn">
+          <AnimationOnScroll animateIn={props.animation}>
             <img id='locationMap' src='/img/locationMap.png' />
           </AnimationOnScroll>
         </a>
