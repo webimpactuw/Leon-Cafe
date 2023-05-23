@@ -59,7 +59,7 @@ const SandwichesMenu = () => {
         </section>
 
         <section className='menu__image'>
-          <img src='/img/sandwichesMenu.jpg' alt='' width='654' height='925' />
+          <img src='/img/sandwichesMenu.png' alt='' width='654' height='925' />
         </section>
       </main>
     </>
