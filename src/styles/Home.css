@@ -118,7 +118,7 @@
   margin-inline: auto;
   display: grid;
   grid-template-columns: 4fr 5fr;
-  grid-template-rows: 1fr 2.5fr 1fr;
+  /* grid-template-rows: 1fr 2.5fr 1fr; */
   padding-block: 120px;
   gap: 120px;
   row-gap: 16px;
@@ -227,12 +227,12 @@
 }
 
 #moveDown {
-  -webkit-animation: movingDown 500ms;
-  animation: movingDown 500ms;
+  -webkit-animation: movingDown 800ms;
+  animation: movingDown 800ms;
 }
 #moveUp {
-  -webkit-animation: movingUp 500ms;
-  animation: movingUp 500ms;
+  -webkit-animation: movingUp 800ms;
+  animation: movingUp 800ms;
 }
 
 @keyframes movingDown {

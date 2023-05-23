@@ -6,6 +6,8 @@ import '../styles/Home.css';
 import '../styles/Button.css';
 import chevronDown from '../assets/chevron_down.svg';
 import chevronRight from '../assets/chevron_right.svg';
+import { AnimationOnScroll } from 'react-animation-on-scroll'
+import "animate.css/animate.min.css";
 
 const Home = () => {
   const targetRef = useRef(null);
@@ -14,16 +16,20 @@ const Home = () => {
     targetRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+
   return (
     <>
       <main className='home'>
         <section className='home__landing'>
           <div className='home__welcome-banner'>
+          <AnimationOnScroll initiallyVisible={true} animateOnce={true} animateIn="animate__fadeIn">
             <div className='home__welcome-text'>
               <h1 id='moveDown'> Welcome To Leon Coffee House</h1>
               <p id='moveUp'> Family-owned Mexican coffee house</p>
             </div>
+            </AnimationOnScroll>
           </div>
+          
           <button onClick={scrollDown}>
             <img src={chevronDown} alt='Scroll Down' />
           </button>
@@ -33,9 +39,13 @@ const Home = () => {
           <div className='home__about-border'>
             <div className='home__about-row'>
               <div className='home__about-column'>
+                <AnimationOnScroll animateIn="animate__fadeInLeft">
                 <h2>About</h2>
+                </AnimationOnScroll>
+                
               </div>
               <div className='home__about-column'>
+                <AnimationOnScroll animateIn="animate__fadeInRight">
                 <p>
                   <b>
                     Leon Coffee House is a cozy and welcoming cafe in the heart
@@ -46,6 +56,7 @@ const Home = () => {
                   is to provide a comfortable space for our community to gather,
                   connect, and enjoy good food and drinks.
                 </p>
+                </AnimationOnScroll>
               </div>
             </div>
           </div>
@@ -64,16 +75,21 @@ const Home = () => {
 
         <section className='home__menu'>
           <div className='home__menu-row'>
+            <AnimationOnScroll animateIn="animate__zoomIn">
             <img src='/img/teddyCoffeeHome.jpg' alt='Teddy Bear Coffee' />
-            <h2>Menu</h2>
-            <p>
-              Indulge in our scrumptious cafe menu that offers a wide variety of
-              drinks, from creamy lattes to decadent affogatos, and food options
-              that range from savory sandwiches to mouth-watering waffles.
-            </p>
-            <a href='/drinksMenu'>
-              <button className='button'>View Menu</button>
-            </a>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInRight">
+              <h2>Menu</h2>
+              <p>
+                Indulge in our scrumptious cafe menu that offers a wide variety of
+                drinks, from creamy lattes to decadent affogatos, and food options
+                that range from savory sandwiches to mouth-watering waffles.
+              </p>
+              
+              <a href='/drinksMenu'>
+                <button className='button' style={{marginTop: '10px'}}>View Menu</button>
+              </a>
+            </AnimationOnScroll>
           </div>
         </section>
 
