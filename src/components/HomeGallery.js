@@ -48,7 +48,7 @@ function HomeGallery() {
           </div>
         ))}
       </div>
-      
+
       <div className="slideshowDotsContainer">
         <div className="slideshowDots">
           {images.map((_, idx) => (
