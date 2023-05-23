@@ -10,6 +10,9 @@ import WafflesMenu from './pages/WafflesMenu';
 import Footer from './components/Footer';
 
 const App = () => {
+  // window.onbeforeunload = function () {
+  //   window.scrollTo(0, 0);
+  // }
   return (
     <>
       <NavBar />

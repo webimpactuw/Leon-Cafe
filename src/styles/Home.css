@@ -227,18 +227,18 @@
 }
 
 #moveDown {
-  -webkit-animation: movingDown 800ms;
-  animation: movingDown 800ms;
+  -webkit-animation: movingDown 1s;
+  animation: movingDown 1000ms;
 }
 #moveUp {
-  -webkit-animation: movingUp 800ms;
-  animation: movingUp 800ms;
+  -webkit-animation: movingUp 1s;
+  animation: movingUp 1s;
 }
 
 @keyframes movingDown {
   from {
     transform: translateY(-50px);
-    opacity: 0.5;
+    opacity: 0.2;
   }
   to {
     transform: translateY(0px);
@@ -248,7 +248,7 @@
 @keyframes movingUp {
   from {
     transform: translateY(30px);
-    opacity: 0.5;
+    opacity: 0.2;
   }
   to {
     transform: translateY(0px);

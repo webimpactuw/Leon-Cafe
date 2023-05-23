@@ -14,40 +14,41 @@ const Home = () => {
   const scrollDown = () => {
     targetRef.current.scrollIntoView({ behavior: 'smooth' });
   };
-  // updates animations based on screen width
-  const animationsDefault = ['animate__fadeIn', 'animate__fadeInLeft', 'animate__fadeInRight', 'animate__zoomIn']; 
-  const animationsMobile = ['animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn']; 
-  const [screenSize, setScreenSize] = useState(getScreenSize());
-  const [animations, setAnimations] = useState(animationsMobile);
 
-  useEffect(() => {
-    const updateDimension = () => {
-      setScreenSize(getScreenSize())
-    }
-    window.addEventListener('resize', updateDimension);
-    if (screenSize.width < 1000) {
-      setAnimations(animationsMobile);
-    } else {
-      setAnimations(animationsDefault);
-    }
-    return(() => {
-      window.removeEventListener('resize', updateDimension);
-    })
-  }, [screenSize])
+  // // updates animations based on screen width
+  // const animationsDefault = ['animate__fadeIn', 'animate__fadeInLeft', 'animate__fadeInRight', 'animate__zoomIn']; 
+  // const animationsMobile = ['animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn']; 
+  // const [screenSize, setScreenSize] = useState(getScreenSize());
+  // const [animations, setAnimations] = useState(animationsMobile);
 
-  function getScreenSize() {
-    return {
-      width: window.innerWidth,
-      height: window.innerHeight
-    }
-  }
+  // useEffect(() => {
+  //   const updateDimension = () => {
+  //     setScreenSize(getScreenSize())
+  //   }
+  //   window.addEventListener('resize', updateDimension);
+  //   if (screenSize.width < 1000) {
+  //     setAnimations(animationsMobile);
+  //   } else {
+  //     setAnimations(animationsDefault);
+  //   }
+  //   return(() => {
+  //     window.removeEventListener('resize', updateDimension);
+  //   })
+  // }, [screenSize])
+
+  // function getScreenSize() {
+  //   return {
+  //     width: window.innerWidth,
+  //     height: window.innerHeight
+  //   }
+  // }
 
   return (
     <>
       <main className='home'>
         <section className='home__landing'>
           <div className='home__welcome-banner'>
-          <AnimationOnScroll initiallyVisible={true} animateOnce={true} animateIn={animations[0]}>
+          <AnimationOnScroll initiallyVisible={true} animateOnce={true} animateIn={'animate__fadeIn'}>
             <div className='home__welcome-text'>
               <h1 id='moveDown'> Welcome To Leon Coffee House</h1>
               <p id='moveUp'> Family-owned Mexican coffee house</p>
@@ -64,13 +65,13 @@ const Home = () => {
           <div className='home__about-border'>
             <div className='home__about-row'>
               <div className='home__about-column'>
-                <AnimationOnScroll animateIn={animations[1]}>
+                <AnimationOnScroll animateOnce={true} animateIn={'animate__fadeInLeft'}>
                 <h2>About</h2>
                 </AnimationOnScroll>
                 
               </div>
               <div className='home__about-column'>
-                <AnimationOnScroll animateIn={animations[2]}>
+                <AnimationOnScroll animateOnce={true} animateIn={'animate__fadeInRight'}>
                 <p>
                   <b>
                     Leon Coffee House is a cozy and welcoming cafe in the heart
@@ -100,10 +101,10 @@ const Home = () => {
 
         <section className='home__menu'>
           <div className='home__menu-row'>
-            <AnimationOnScroll animateIn={animations[3]}>
+            <AnimationOnScroll animateOnce={true} animateIn={'animate__zoomIn'}>
             <img src='/img/teddyCoffeeHome.jpg' alt='Teddy Bear Coffee' />
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn={animations[2]}>
+            <AnimationOnScroll animateOnce={true} animateIn={'animate__fadeInRight'}>
               <h2>Menu</h2>
               <p>
                 Indulge in our scrumptious cafe menu that offers a wide variety of
@@ -168,7 +169,7 @@ const Home = () => {
         </section>
 
         <section className='home__location'>
-          <Location animation={animations[3]}/>
+          <Location animation={'animate__zoomIn'}/>
         </section>
       </main>
     </>
