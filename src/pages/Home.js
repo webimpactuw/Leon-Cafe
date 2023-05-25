@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 
 import Location from '../components/Location';
 import HomeGallery from '../components/HomeGallery';
@@ -65,13 +65,12 @@ const Home = () => {
           <div className='home__about-border'>
             <div className='home__about-row'>
               <div className='home__about-column'>
-                <AnimationOnScroll animateOnce={true} animateIn={'animate__fadeInLeft'}>
+                <AnimationOnScroll animateOnce={true} animatePreScroll={false} animateIn={'animate__fadeInLeft'}>
                 <h2>About</h2>
                 </AnimationOnScroll>
-                
               </div>
               <div className='home__about-column'>
-                <AnimationOnScroll animateOnce={true} animateIn={'animate__fadeInRight'}>
+                <AnimationOnScroll animateOnce={true} animatePreScroll={false} animateIn={'animate__fadeInRight'}>
                 <p>
                   <b>
                     Leon Coffee House is a cozy and welcoming cafe in the heart
@@ -101,10 +100,10 @@ const Home = () => {
 
         <section className='home__menu'>
           <div className='home__menu-row'>
-            <AnimationOnScroll animateOnce={true} animateIn={'animate__zoomIn'}>
+            <AnimationOnScroll animateOnce={true} animatePreScroll={false} animateIn={'animate__zoomIn'}>
             <img src='/img/teddyCoffeeHome.jpg' alt='Teddy Bear Coffee' />
             </AnimationOnScroll>
-            <AnimationOnScroll animateOnce={true} animateIn={'animate__fadeInRight'}>
+            <AnimationOnScroll animateOnce={true} animatePreScroll={false} animateIn={'animate__fadeInRight'}>
               <h2>Menu</h2>
               <p>
                 Indulge in our scrumptious cafe menu that offers a wide variety of
