@@ -16,7 +16,7 @@ const Footer = () => {
           <p>&copy; Leon Coffee House</p>
           <p>
             {' '}
-            Made with <span>&hearts;</span> by DUBvelopers
+            Made with <span>&hearts;</span> by Web Impact UW
           </p>
         </div>
 
